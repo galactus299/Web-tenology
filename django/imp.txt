@@ -1,0 +1,26 @@
+django-admin startproject locallibrary
+
+cd locallibrary
+
+py manage.py startapp catalog
+
+Go to installed apps in setting file and add "catalog.apps.CatalogConfig"
+
+add "path('catalog/', include('catalog.urls'))," to the urls.py file of the main directory
+also can add " path('', RedirectView.as_view(url='catalog/'))," to redirect to the"" to catalog
+
+create the urls.py file in catalog folder
+
+
+defining models 
+from django.urls import reverse 
+class Genre (models.Model):
+    name=models.CharField(max_length=200,help_text='Enter a book genre (e.g. Science Fiction)')
+
+how to add foriegn key?
+author = models.ForeignKey('Author', on_delete=models.SET_NULL, null=True)
+
+
+
+register models
+goto admin.py/catalogs

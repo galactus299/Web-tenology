@@ -1,0 +1,33 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css" integrity="sha384-zCbKRCUGaJDkqS1kPbPd7TveP5iyJE0EjAuZQTgFLD2ylzuqKfdKlfG/eSrtxUkn" crossorigin="anonymous">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Update Movies</h1>
+
+    <form action="updaterecord/{{ mymember.id }}" method="post">
+        {% csrf_token %}
+        <div class="form-group">
+          <label for="Moviename">Movie name:</label>
+          <input  type="text"  class="form-control" id="Moviename" name="Moviename" aria-describedby="moviename" value="{{mymember.movie_name}}">
+        </div>
+        <div class="form-group">
+          <label for="Summary">Summary</label>
+          <input  type="text"  class="form-control" id="Summary" name="Summary" value="{{mymember.summary}}" >
+        </div>
+        <div class="form-group">
+            <label for="Actorname">Actorname:</label>
+            <input  type="text" class="form-control" id="Actorname" name="Actorname" value="{{mymember.Actorname}}" >
+          </div>
+        <div class="form-group">
+            <label for="Releasedate">Releasedate</label>
+            <input type="datetime" class="form-control" id="Releasedate" name="Releasedate" value="{{mymember.release_date}}" >
+        </div>
+        <button type="submit" class="btn btn-primary">Submit</button>
+      </form>
+</body>
+</html>

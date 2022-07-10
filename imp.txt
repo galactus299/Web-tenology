@@ -1,0 +1,2 @@
+https://www.tutorialrepublic.com/php-tutorial/php-get-and-post.php
+https://data-flair.training/blogs/django-static-files-handling/

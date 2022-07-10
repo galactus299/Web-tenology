@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" type="text/css" href="./css/task2.css">
+</head>
+<body>
+    <div class="Main-box"> 
+        <div class="head">
+            <h1>Sign up</h1>
+            <p>Already a member?log in.</p>
+            
+        </div>
+        <hr>
+        <p id="welcome-info">
+            Hi there we are excited to have you as part of our comunity.To get
+            Started,please create an account.
+        </p>
+        <div class="Input-form">
+            <form action="./submit.html">
+                <table>
+                    <tr>
+                        <th>
+                            <label for="email"> Enter your Email</label>
+                        </th>
+                        <td colspan="3" >
+                            <input id="email" type="email" > 
+                        </td>
+                    </tr>
+                    <tr>
+                        <th>
+                            <label for="pass">Create Password</label>
+                        </th>
+                        <td colspan="3" >
+                            <input id="pass" type="password" >
+                        </td>
+                    </tr>
+                    
+                    <tr>
+                        <th>
+                            <label for="confpass"> Confirm Password</label>
+                        </th>
+                        <td colspan="3" >
+                            <input id="confpass" type="password">
+                        </td>
+                    </tr>
+
+                    <tr>
+                        <th>
+                            <label for="p_link">Your Profile Link</label>
+                        </th>
+                        <td style="width:8px">
+                            <label >fitandawesome.com/</label>
+                        </td>
+                        <td>
+                            <input id="p_link" type="text" style="width: 66%;">
+                        </td>
+
+                    </tr>
+                    <tr>
+                        <th>
+                            <label for="b-day">BirthDay</label>
+                        </th>
+                        <td style="display:flex; width: 195%;" colspan="3" width:>
+                            <input type="number" name="month" min="1" max="12" placeholder="Month" />            
+                            <input type="number" name="date" min="1" max="31" placeholder="Day"/>
+                            <input type="number" name="year" min="1900" max="9999" placeholder="Year" />
+                        </td>
+                        
+                            
+                        
+                    </tr>
+                    <tr id="infotag">
+                        <td colspan="3" >This is hidden by default from your profile</td>
+                    </tr>
+                    
+                </table>
+                <div style="margin-left: 20%;" >
+                    <input for="Tos" type="checkbox"><label id="Tos">I have read and agree to the TOS</label><br>    
+                </div>
+               
+                <button type="submit" id="submit">Create Profile></button>
+            </form>
+
+        </div>
+    </div>
+
+   
+</body>
+</html>

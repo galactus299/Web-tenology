@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" type="text/css" href="./css/task2.css">
+</head>
+<body>
+    <div class="card">
+        <label for="input" >Value</label><input type="text" id="cardinput">
+        <div class="card-body">
+            <p>One Numerical Expression or loop per line
+                Example:x=3;x=n(x);c<=100;x-1
+            </p>
+            <div class= "card-body-1">
+                <button>Only evaluate</button>
+                <button>Prime</button>
+                <button>Factor</button>
+                <button>Help</button>
+            </div>
+            <div class="card-body-1">
+                <button>Config</button>
+                <button>Wizard</button>
+                <button>From file</button>
+                <button>Blocky mode</button>
+            </div>
+            <div class="card-body-1">
+                <label for=""><strong>Function category:</strong></label>
+                <select id="category" name="calculation">
+                    <option value="Math">Basic Math</option>
+                    <option value="English">English</option>
+                  </select>
+            </div>
+            <div class="card-body-1">
+                <button>(</button>
+                <button>)</button>
+                <button>+</button>
+                <button>-</button>
+                <button>*</button>
+                <button>/</button>
+                <button>%</button>
+                <button>^</button>
+                <button>sqrt(</button>
+                <button>random(</button>
+                <button>Abs(</button>
+                <button>Sign(</button>
+
+            </div>
+            
+
+        </div>
+
+    </div>
+    <div class="Main-box"> 
+        <div class="head">
+            <h1>Edit Profile</h1>        
+        </div>
+        <hr>
+        <div class="Input-form">
+            <form action="./submit.html">
+                <table>
+                    <tr>
+                        <th>
+                            <label for="email"> Your Profile photo </label>
+                        </th>
+                        <td colspan="3" >
+                            <input id="file" type="file"> 
+                        </td>
+                    </tr>
+                    <tr>
+                        <th>
+                            <label for="pass">Your First Name</label>
+                        </th>
+                        <td colspan="3" >
+                            <input id="pass" type="text" >
+                        </td>
+                    </tr>
+                    
+                    <tr>
+                        <th>
+                            <label for="confpass"> Your Last Name</label>
+                        </th>
+                        <td colspan="3" >
+                            <input id="confpass" type="text">
+                        </td>
+                    </tr>
+
+                    <tr>
+                        <th>
+                            <label for="p_link">Gender</label>
+                        </th>
+                        <td style="display:flex;">
+                            <input type="radio" style="width:20px" value="Female"><label>Female</label>
+                            <input type="radio" style="width:20px" value="Male"><label>Male</label>
+                        </td>
+
+                    </tr>
+                    <tr>
+                        <th>
+                            <label for="b-day">BirthDay</label>
+                        </th>
+                        <td style="display:flex; width: 84%;" colspan="3" width:>
+                            <input type="number" name="month" min="1" max="12" placeholder="Month" />            
+                            <input type="number" name="date" min="1" max="31" placeholder="Day"/>
+                            <input type="number" name="year" min="1900" max="9999" placeholder="Year" />
+                        </td>
+                        
+                            
+                        
+                    </tr>
+                    <tr>
+                        <th>About You</th>
+                        <td>
+                            <textarea cols="26" rows="5"> </textarea>
+                        </td>
+                    </tr>
+                    <tr>
+                        <th>
+                            <label for="weburl"> Your website url</label>
+                        </th>
+                        <td colspan="3" >
+                            <input id="weburl" type="url">
+                        </td>
+                    </tr>
+                    <tr>
+                        <th>
+                            <label for="webname"> Your website Name</label>
+                        </th>
+                        <td colspan="3" >
+                            <input id="webname" type="text">
+                        </td>
+                    </tr>
+                    
+                </table>
+                
+               
+                <button type="submit" id="submit">Create Profile></button>
+            </form>
+
+        </div>
+    </div>
+
+   
+</body>
+</html>

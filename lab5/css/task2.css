@@ -1,0 +1,56 @@
+.head{
+    
+    display:flex; 
+    align-items: center;
+    position: relative; 
+      
+}
+
+th{
+    text-align: left;
+}
+.head >p{
+    display: block;
+    margin-left: auto;
+    margin-right: 0;
+}
+#welcome-info{
+    font-size: 20px;
+}
+.Main-box{
+     width:500px; 
+    border:2px solid black;
+    margin-left: 75px;
+}
+#submit{
+display: block;
+  margin-left: auto;
+  margin-right: 0;
+}
+
+td>input{
+    width: 80%;
+}
+.long{
+    padding: 0;
+}
+#infotag{
+    text-align: center;
+    border: 15px;
+}
+.card{
+    background-color: rgb(98, 98, 105);
+    width:800px
+}
+.card-body{
+    text-align: center;
+    padding: 5px;
+}
+.card-body-1{
+    margin:5px;
+}
+#cardinput{
+
+    width: 90%;
+    height: 50px;
+}
